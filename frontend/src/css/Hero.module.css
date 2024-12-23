@@ -103,3 +103,40 @@
 .heroInput {
     width: 30rem;
 }
+
+@media (max-width:576px) {
+    .heroSection {
+        grid-template-columns: 1fr;
+        padding:2rem;
+    }
+
+    .heroContainer img {
+        height: 40rem;
+    }
+
+    .heroTitle {
+        font-size: var(--header-two-desktop);
+    }
+
+    .heroText {
+        font-size: var(--header-five-desktop);
+    }
+
+    .heroForm {
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .heroSelect, .heroInput {
+        width: 100%;
+    }
+
+    .heroInput {
+        width: 100%;
+    }
+
+    .heroButton {
+        width: 100%;
+    }
+}

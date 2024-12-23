@@ -1,0 +1,80 @@
+.teamSection {
+    padding: 5rem 10rem;
+}
+
+.title {
+    font-size: var(--header-two-desktop);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: var(--header-font-family);
+}
+
+.text {
+    color: var(--nav-color);
+    font-size: 2rem;
+    line-height: 3.4rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slideContainer {
+  padding: 2rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cardWrapper {
+  width: 100%;
+}
+
+:global(.carousel .control-dots .dot) {
+  background: var(--color) !important;
+  border: 2px solid var(--primary-color) !important;
+  box-shadow: none !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+:global(.carousel) {
+  padding-bottom: 3rem;
+}
+
+:global(.carousel .control-dots .dot.selected) {
+  background: var(--primary-color) !important;
+}
+
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+
+
+@media (max-width: 567px) {
+    .teamSection {
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: var(--header-three-desktop);
+    }
+
+}

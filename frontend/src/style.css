@@ -8,6 +8,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root {
     --header-one-desktop: 6.485rem;
     --header-two-desktop: 5.188rem;
@@ -16,7 +20,7 @@ html {
     --header-five-desktop: 2.656rem;
     --header-six-desktop: 2.15rem;
     --text-size: 1.7rem;
-    --subHeadline:21.25rem;
+    --sub-headline:2.125rem;
     --header-font-family: Merriweather;
     --body-font-family: Open Sans;
     --primary-color: #091638;
@@ -25,4 +29,18 @@ html {
     --hover-color: #6E8AE9;
     --color: #fff;
     --nav-color: #141B2D;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color);
+    border: 2px solid var(--primary-color);
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--primary-color);
 }

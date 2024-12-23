@@ -1,0 +1,54 @@
+.card {
+    width: 40rem;
+    height: auto;
+}
+
+.imgContainer {
+    width: 40rem;
+    height: 25rem;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.textContainer {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color);
+}
+
+.title {
+    font-size: var(--text-size);
+    color: var(--nav-color);
+    font-family: var(--header-font-family);
+    line-height: 3rem;
+}
+
+.price {
+    color: var(--secondary-color);
+    font-size: var(--text-size);
+    font-family: var(--body-font-family);
+    font-weight: bold;
+}
+
+.location {
+    color: var(--nav-color);
+    font-size: var(--text-size);
+    font-family: var(--body-font-family);
+}
+
+@media (max-width: 567px) {
+    .card {
+        width: 30rem;
+    }
+
+    .imgContainer {
+        width: 30rem;
+    }
+}
