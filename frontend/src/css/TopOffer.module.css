@@ -1,0 +1,23 @@
+.topOfferSection {
+    background-color: var(--tertiary-color);
+    padding: 5rem 10rem;
+}
+
+.topOfferContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topOffer {
+    font-size: var(--header-two-desktop);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: var(--header-font-family);
+}
+
+.text {
+    color: var(--nav-color);
+    font-size: var(--header-six-desktop);
+    line-height: 3.4rem;
+}

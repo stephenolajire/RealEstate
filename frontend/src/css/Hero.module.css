@@ -1,0 +1,105 @@
+@keyframes left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.heroContainer1 {
+    animation: left 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroContainer {
+    animation: right 1s ease;
+}
+
+.heroContent {
+    height: auto;
+    width: 100%;
+}
+
+
+.heroSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0rem 10rem;
+    place-content: center;
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.heroTitle {
+    font-size: var(--header-one-desktop);
+    font-family: var(--header-font-family);
+    color: var(--primary-color);
+    margin-top: 2rem;
+}
+
+
+.heroText {
+    font-size: var(--header-six-desktop);
+    font-family: var(--body-font-family);
+    color: var(--nav-color);
+    margin-top: 2rem;
+    line-height: 3.4rem;
+}
+
+.heroContainer img {
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+}
+
+.heroForm {
+    width: auto;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--tertiary-color);
+    height: 8rem;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.heroButton {
+    background-color: var(--primary-color);
+    color: var(--color);
+    width: 15rem;
+    height: 4rem;
+    font-family: var(--body-font-family);
+    cursor: pointer;
+    font-size: 1.6rem;
+    border: none;
+}
+
+.heroSelect, .heroInput {
+    width: 20rem;
+    height: 4rem;
+    border: 1px solid var(--nav-color);
+    font-size: 1.6rem;
+    font-family: var(--body-font-family);
+    background-color: var(--color);
+    padding-left: 1rem;
+}
+
+.heroInput {
+    width: 30rem;
+}

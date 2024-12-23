@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-one-desktop: 6.485rem;
+    --header-two-desktop: 5.188rem;
+    --header-three-desktop: 4.15rem;
+    --header-four-desktop: 3.3203rem;
+    --header-five-desktop: 2.656rem;
+    --header-six-desktop: 2.15rem;
+    --text-size: 1.7rem;
+    --subHeadline:21.25rem;
+    --header-font-family: Merriweather;
+    --body-font-family: Open Sans;
+    --primary-color: #091638;
+    --secondary-color: #1C3988;
+    --tertiary-color: #F3F3FA;
+    --hover-color: #6E8AE9;
+    --color: #fff;
+    --nav-color: #141B2D;
+}
