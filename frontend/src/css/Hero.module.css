@@ -115,11 +115,11 @@
     }
 
     .heroTitle {
-        font-size: var(--header-two-desktop);
+        font-size: var(--header-three-desktop);
     }
 
     .heroText {
-        font-size: var(--header-five-desktop);
+        font-size: var(--header-six-desktop);
     }
 
     .heroForm {

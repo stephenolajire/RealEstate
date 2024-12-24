@@ -1,0 +1,42 @@
+.referenceSection {
+    padding: 5rem 10rem;
+    padding-top: 0rem;
+}
+
+.title {
+    font-size: var(--header-two-desktop);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-family: var(--header-font-family);
+}
+
+.referenceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text {
+    color: var(--nav-color);
+    font-size: 2rem;
+    line-height: 3.4rem;
+    margin-bottom: 4rem;
+}
+
+
+@media (min-width: 300px) and (max-width: 575px) {
+    .referenceSection {
+        padding: 2rem;
+    }
+
+    .referenceContent {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: var(--header-three-desktop);
+    }
+
+    .text {
+        font-size: var(--text-size);
+    }
+}

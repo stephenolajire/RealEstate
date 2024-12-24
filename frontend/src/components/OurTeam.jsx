@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import style from "../css/OurTeam.module.css";
 import AOS from "aos";
-import TeamCard from "./TeamCard";
+import TeamCard from "../cards/TeamCard";
 import { teamData } from "../constant/constant";
 
 const OurTeam = () => {

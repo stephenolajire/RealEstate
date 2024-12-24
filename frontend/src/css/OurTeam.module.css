@@ -67,14 +67,17 @@
 }
 
 
-
 @media (max-width: 567px) {
-    .teamSection {
-        padding: 2rem;
-    }
+  .teamSection {
+    padding: 2rem;
+  }
 
-    .title {
-        font-size: var(--header-three-desktop);
-    }
+  .title {
+    font-size: var(--header-three-desktop);
+  }
+
+  .text {
+    font-size: var(--text-size);
+  }
 
 }

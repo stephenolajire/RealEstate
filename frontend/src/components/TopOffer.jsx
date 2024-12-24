@@ -3,7 +3,7 @@ import style from "../css/TopOffer.module.css";
 import Btn from "./Buttons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Card from "./Card";
+import Card from '../cards/Card'
 
 const TopOffer = () => {
   useEffect(() => {

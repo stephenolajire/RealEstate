@@ -4,6 +4,7 @@ import TopOffer from '../components/TopOffer'
 import style from '../css/Home.module.css'
 import About from '../components/About'
 import OurTeam from '../components/OurTeam'
+import Reference from '../components/Reference'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <TopOffer />
       <About />
       <OurTeam />
+      <Reference />
     </section>
   )
 }
