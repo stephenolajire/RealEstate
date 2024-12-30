@@ -50,10 +50,10 @@ const Reference = () => {
         >
           {teamGroups.map((group, index) => (
             <div key={index} className={style.slideContainer}>
-              <div className={style.gridContainer}>
-                {group.map((reference) => (
-                  <div key={reference.id} className={style.cardWrapper}>
-                    <ReferenceCard reference={reference} />
+              <div className={style.gridContainer} key={index}>
+                {group.map((reference, index) => (
+                  <div key={index} className={style.cardWrapper}>
+                    <ReferenceCard reference={reference} key={index}/>
                   </div>
                 ))}
               </div>

@@ -48,10 +48,10 @@ const OurTeam = () => {
         >
           {teamGroups.map((group, index) => (
             <div key={index} className={style.slideContainer}>
-              <div className={style.gridContainer}>
-                {group.map((team) => (
-                  <div key={team.id} className={style.cardWrapper}>
-                    <TeamCard team={team} />
+              <div className={style.gridContainer} key={index}>
+                {group.map((team, index) => (
+                  <div key={index} className={style.cardWrapper}>
+                    <TeamCard team={team} key={index}/>
                   </div>
                 ))}
               </div>

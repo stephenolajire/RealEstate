@@ -31,16 +31,18 @@ body {
     --nav-color: #141B2D;
 }
 
-
-.carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--color);
-    border: 2px solid var(--primary-color);
-    margin: 0 5px;
+:global(.carousel .control-dots .dot) {
+  background: var(--color) !important;
+  border: 2px solid var(--primary-color) !important;
+  box-shadow: none !important;
+  width: 10px !important;
+  height: 10px !important;
 }
 
-.carousel-indicators .active {
-    background-color: var(--primary-color);
+:global(.carousel) {
+  padding-bottom: 3rem;
+}
+
+:global(.carousel .control-dots .dot.selected) {
+  background: var(--primary-color) !important;
 }

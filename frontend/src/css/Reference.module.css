@@ -22,21 +22,66 @@
     margin-bottom: 4rem;
 }
 
+.slideContainer {
+  padding: 2rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 2rem;
+  width: 100%;
+  place-items: center;
+  place-content: center;
+}
+
+.cardWrapper {
+  width: 40rem;
+  height: auto;
+}
+
+:global(.carousel .control-dots .dot) {
+  background: var(--color) !important;
+  border: 2px solid var(--primary-color) !important;
+  box-shadow: none !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+:global(.carousel) {
+  padding-bottom: 3rem;
+}
+
+:global(.carousel .control-dots .dot.selected) {
+  background: var(--primary-color) !important;
+}
+
 
 @media (min-width: 300px) and (max-width: 575px) {
-    .referenceSection {
-        padding: 2rem;
-    }
+  .referenceSection {
+    padding: 2rem;
+  }
 
-    .referenceContent {
-        grid-template-columns: 1fr;
-    }
+  .referenceContent {
+    grid-template-columns: 1fr;
+  }
 
-    .title {
-        font-size: var(--header-three-desktop);
-    }
+  .title {
+    font-size: var(--header-three-desktop);
+  }
 
-    .text {
-        font-size: var(--text-size);
-    }
+  .text {
+    font-size: var(--text-size);
+  }
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .cardWrapper {
+    width: 100%;
+  }
+
+
 }

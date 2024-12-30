@@ -1,0 +1,13 @@
+.container {
+    background-color: var(--tertiary-color);
+    padding: 2rem;
+    width: auto;
+    height: auto;
+}
+
+.referenceText {
+    font-size: var(--text-size);
+    color: var(--primary-color);
+    font-family: var(--body-font-family);
+    text-align: center;
+}
