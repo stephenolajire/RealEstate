@@ -4,6 +4,7 @@ import Btn from "./Buttons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Card from '../cards/Card'
+import { Link } from "react-router-dom";
 
 const TopOffer = () => {
   useEffect(() => {
@@ -18,7 +19,10 @@ const TopOffer = () => {
             Fulfill your career dreams, enjoy all the achievements of the <br />{" "}
             city center and luxury housing to the fullest.
           </p>
-          <Btn content="View all offers" />
+
+          <Link to="/search">
+            <Btn content="View all offers" />
+          </Link>
         </div>
         <div className={style.cardContainer}>
           <Card />

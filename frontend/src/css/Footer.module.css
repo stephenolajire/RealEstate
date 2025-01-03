@@ -62,7 +62,7 @@
     font-size: 1.6rem;
 }
 
-@media (max-width: 567px) {
+@media (min-width:300px) and (max-width: 567px) {
     .footerUp {
         flex-direction: column;
         gap: 2rem;
@@ -74,9 +74,9 @@
         width: 13rem;
     }
 
-    .container2 {
+    /* .container2 {
         padding-left: 2rem;
-    }
+    } */
 
     .container2 h6 {
         font-size: var(--header-six-desktop);

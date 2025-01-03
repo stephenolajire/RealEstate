@@ -3,6 +3,7 @@
     padding: 2rem;
     width: auto;
     height: auto;
+    position: relative;
 }
 
 .referenceText {
@@ -10,4 +11,21 @@
     color: var(--primary-color);
     font-family: var(--body-font-family);
     text-align: center;
+}
+
+.nameOffer{
+    padding: 1rem 0rem;
+    text-align: left;
+}
+
+.referenceName, .referenceOffer {
+    font-size: var(--text-size);
+    color: var(--primary-color);
+    font-family: var(--body-font-family);
+    font-weight: bold;
+}
+
+.referenceOffer {
+    margin-top: 0.5rem;
+    font-weight: normal;
 }

@@ -9,7 +9,7 @@ const ReferenceCard = ({reference}) => {
           {reference.text}
         </p>
       </div>
-      <div>
+      <div className={style.nameOffer}>
         <p className={style.referenceName}>
           {reference.name}
         </p>
